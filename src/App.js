@@ -1,11 +1,5 @@
 import React from "react";
-import { Provider } from "react-redux";
-
-import store from "./store";
-import Home from "./Home";
 
 export default () => (
-  <Provider store={store}>
-    <Home />
-  </Provider>
+  <h1>Hello World!</h1>
 );
