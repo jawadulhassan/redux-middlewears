@@ -1,7 +1,11 @@
 import React from "react";
+import { Provider } from "react-redux";
 
-function App() {
-  return <h1>Hello World!</h1>;
-}
+import store from "./store";
+import Home from "./Home";
 
-export default App;
+export default () => (
+  <Provider store={store}>
+    <Home />
+  </Provider>
+);
